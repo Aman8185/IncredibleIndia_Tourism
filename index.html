@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India - Discover the Land of Diversity</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Incredible India</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                <li><a href="plan-trip.html" class="nav-link">Plan Your Trip</a></li>
+                <li><a href="about.html" class="nav-link">About India</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-up">Incredible India Awaits You</h1>
+                <p class="hero-subtitle fade-in-up delay-1">Discover a land where ancient traditions meet modern wonders</p>
+                <a href="plan-trip.html" class="cta-button fade-in-up delay-2">Plan Your Journey</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Top Destinations -->
+    <section class="section destinations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top Destinations</h2>
+                <p class="section-subtitle">Explore India's most breathtaking places</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800" alt="Taj Mahal">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Taj Mahal, Agra</h3>
+                        <p>A symbol of eternal love</p>
+                        <a href="destinations.html#taj-mahal" class="card-link">Explore →</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800" alt="Kerala Backwaters">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kerala Backwaters</h3>
+                        <p>Serene waterways and lush landscapes</p>
+                        <a href="destinations.html#kerala" class="card-link">Explore →</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Ladakh">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ladakh</h3>
+                        <p>Land of high passes and pristine beauty</p>
+                        <a href="destinations.html#ladakh" class="card-link">Explore →</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a6e?w=800" alt="Rajasthan">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Rajasthan</h3>
+                        <p>Royal palaces and desert adventures</p>
+                        <a href="destinations.html#rajasthan" class="card-link">Explore →</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Goa">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Goa</h3>
+                        <p>Sun, sand, and vibrant culture</p>
+                        <a href="destinations.html#goa" class="card-link">Explore →</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800" alt="Varanasi">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Varanasi</h3>
+                        <p>Spiritual capital on the Ganges</p>
+                        <a href="destinations.html#varanasi" class="card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture & Heritage -->
+    <section class="section culture-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Culture & Heritage</h2>
+                <p class="section-subtitle">Immerse yourself in India's rich traditions</p>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-card" data-aos="fade-right">
+                    <div class="culture-icon">🏛️</div>
+                    <h3>Ancient Architecture</h3>
+                    <p>From the intricate carvings of Khajuraho to the majestic forts of Rajasthan</p>
+                </div>
+                <div class="culture-card" data-aos="fade-up">
+                    <div class="culture-icon">🎭</div>
+                    <h3>Performing Arts</h3>
+                    <p>Classical dances, music, and theater traditions spanning millennia</p>
+                </div>
+                <div class="culture-card" data-aos="fade-left">
+                    <div class="culture-icon">🎨</div>
+                    <h3>Art & Craft</h3>
+                    <p>Handwoven textiles, pottery, jewelry, and traditional handicrafts</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="about.html" class="btn-secondary">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Experiences -->
+    <section class="section experiences-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Experiences</h2>
+                <p class="section-subtitle">Create unforgettable memories</p>
+            </div>
+            <div class="experiences-grid">
+                <div class="experience-item" data-aos="zoom-in">
+                    <div class="experience-icon">🍛</div>
+                    <h3>Food Tours</h3>
+                    <p>Taste authentic flavors from street food to royal cuisines</p>
+                </div>
+                <div class="experience-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="experience-icon">🎉</div>
+                    <h3>Festivals</h3>
+                    <p>Celebrate Diwali, Holi, Durga Puja, and more</p>
+                </div>
+                <div class="experience-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="experience-icon">🐅</div>
+                    <h3>Wildlife Safaris</h3>
+                    <p>Spot tigers, elephants, and exotic birds</p>
+                </div>
+                <div class="experience-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="experience-icon">🧘</div>
+                    <h3>Spiritual Retreats</h3>
+                    <p>Yoga, meditation, and wellness journeys</p>
+                </div>
+                <div class="experience-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="experience-icon">⛰️</div>
+                    <h3>Adventure Sports</h3>
+                    <p>Trekking, rafting, paragliding, and more</p>
+                </div>
+                <div class="experience-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="experience-icon">🏖️</div>
+                    <h3>Beach Escapes</h3>
+                    <p>Pristine beaches and coastal paradises</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="experiences.html" class="btn-secondary">Explore All Experiences</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Packages -->
+    <section class="section packages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Curated Travel Packages</h2>
+                <p class="section-subtitle">Handpicked journeys for every traveler</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card" data-aos="flip-left">
+                    <div class="package-badge">Popular</div>
+                    <h3>Golden Triangle</h3>
+                    <p class="package-duration">7 Days</p>
+                    <ul class="package-features">
+                        <li>Delhi - Agra - Jaipur</li>
+                        <li>Heritage hotels</li>
+                        <li>Guided tours</li>
+                    </ul>
+                    <div class="package-price">From ₹45,000</div>
+                    <a href="plan-trip.html" class="btn-primary">Book Now</a>
+                </div>
+                <div class="package-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="package-badge">Adventure</div>
+                    <h3>Himalayan Explorer</h3>
+                    <p class="package-duration">10 Days</p>
+                    <ul class="package-features">
+                        <li>Ladakh & Himachal</li>
+                        <li>Mountain trekking</li>
+                        <li>Cultural immersion</li>
+                    </ul>
+                    <div class="package-price">From ₹65,000</div>
+                    <a href="plan-trip.html" class="btn-primary">Book Now</a>
+                </div>
+                <div class="package-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="package-badge">Relaxation</div>
+                    <h3>Kerala Backwaters</h3>
+                    <p class="package-duration">6 Days</p>
+                    <ul class="package-features">
+                        <li>Houseboat stay</li>
+                        <li>Ayurvedic spa</li>
+                        <li>Beach relaxation</li>
+                    </ul>
+                    <div class="package-price">From ₹35,000</div>
+                    <a href="plan-trip.html" class="btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Traveler Stories</h2>
+                <p class="section-subtitle">Experiences from our visitors</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p>India exceeded all my expectations. The warmth of the people, the incredible food, and the breathtaking landscapes made this the trip of a lifetime.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div class="author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <p>United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p>The spiritual journey in Varanasi and the royal palaces of Rajasthan were absolutely mesmerizing. India is truly incredible!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <h4>James Davis</h4>
+                                <p>United States</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p>From the beaches of Goa to the mountains of Ladakh, every destination was unique and beautiful. The food alone is worth the trip!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">EL</div>
+                            <div class="author-info">
+                                <h4>Emma Laurent</h4>
+                                <p>France</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Incredible India</h3>
+                    <p>Discover the land of diversity, culture, and endless wonders.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="plan-trip.html">Plan Your Trip</a></li>
+                        <li><a href="about.html">About India</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Travel Info</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQs</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                        <li><a href="#">Visa Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Get travel inspiration delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Incredible India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <a href="plan-trip.html" class="floating-cta" aria-label="Plan your trip">
+        <span>Plan Your Journey</span>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+
+

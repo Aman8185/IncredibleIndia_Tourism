@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Incredible India</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Incredible India</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+                <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                <li><a href="plan-trip.html" class="nav-link">Plan Your Trip</a></li>
+                <li><a href="about.html" class="nav-link">About India</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="page-hero-content">
+            <h1 class="page-title">Discover India's Destinations</h1>
+            <p class="page-subtitle">From snow-capped mountains to golden beaches, explore the diversity of India</p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="section filter-section">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="nature">Nature</button>
+                <button class="filter-btn" data-category="beaches">Beaches</button>
+                <button class="filter-btn" data-category="himalayas">Himalayas</button>
+                <button class="filter-btn" data-category="desert">Deserts</button>
+                <button class="filter-btn" data-category="heritage">Heritage Cities</button>
+                <button class="filter-btn" data-category="spiritual">Spiritual Sites</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="section destinations-page-section">
+        <div class="container">
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Nature -->
+                <div class="destination-card" data-category="nature" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800" alt="Kerala Backwaters">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Nature</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kerala Backwaters</h3>
+                        <p>Serene waterways, lush paddy fields, and traditional houseboats</p>
+                        <div class="card-meta">
+                            <span>🏞️ Best Season: Oct-Mar</span>
+                        </div>
+                        <a href="#kerala-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="nature" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Ladakh">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Nature</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ladakh</h3>
+                        <p>High-altitude desert, pristine lakes, and Buddhist monasteries</p>
+                        <div class="card-meta">
+                            <span>⛰️ Best Season: May-Sep</span>
+                        </div>
+                        <a href="#ladakh-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="nature" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800" alt="Meghalaya">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Nature</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Meghalaya</h3>
+                        <p>Living root bridges, waterfalls, and cloud-kissed hills</p>
+                        <div class="card-meta">
+                            <span>🌧️ Best Season: Mar-Jun</span>
+                        </div>
+                        <a href="#meghalaya-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <!-- Beaches -->
+                <div class="destination-card" data-category="beaches" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Goa">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Beaches</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Goa</h3>
+                        <p>Golden beaches, Portuguese heritage, and vibrant nightlife</p>
+                        <div class="card-meta">
+                            <span>🏖️ Best Season: Nov-Mar</span>
+                        </div>
+                        <a href="#goa-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="beaches" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Andaman">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Beaches</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Andaman & Nicobar</h3>
+                        <p>Crystal-clear waters, coral reefs, and pristine beaches</p>
+                        <div class="card-meta">
+                            <span>🌊 Best Season: Oct-May</span>
+                        </div>
+                        <a href="#andaman-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <!-- Himalayas -->
+                <div class="destination-card" data-category="himalayas" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Himachal Pradesh">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Himalayas</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Himachal Pradesh</h3>
+                        <p>Snow-capped peaks, hill stations, and adventure sports</p>
+                        <div class="card-meta">
+                            <span>🏔️ Best Season: Mar-Jun, Sep-Nov</span>
+                        </div>
+                        <a href="#himachal-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="himalayas" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800" alt="Sikkim">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Himalayas</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sikkim</h3>
+                        <p>Buddhist monasteries, rhododendron forests, and mountain views</p>
+                        <div class="card-meta">
+                            <span>🌸 Best Season: Mar-May, Sep-Nov</span>
+                        </div>
+                        <a href="#sikkim-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <!-- Deserts -->
+                <div class="destination-card" data-category="desert" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a6e?w=800" alt="Rajasthan">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Deserts</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Rajasthan</h3>
+                        <p>Thar Desert, royal palaces, and vibrant culture</p>
+                        <div class="card-meta">
+                            <span>🏜️ Best Season: Oct-Mar</span>
+                        </div>
+                        <a href="#rajasthan-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <!-- Heritage Cities -->
+                <div class="destination-card" data-category="heritage" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800" alt="Taj Mahal">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Heritage</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Agra - Taj Mahal</h3>
+                        <p>The eternal symbol of love, a UNESCO World Heritage Site</p>
+                        <div class="card-meta">
+                            <span>🏛️ Best Season: Oct-Mar</span>
+                        </div>
+                        <a href="#taj-mahal-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="heritage" data-aos="fade-up" data-aos-delay="900">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800" alt="Delhi">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Heritage</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Delhi</h3>
+                        <p>Historic monuments, Mughal architecture, and modern culture</p>
+                        <div class="card-meta">
+                            <span>🏰 Best Season: Oct-Mar</span>
+                        </div>
+                        <a href="#delhi-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="heritage" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a6e?w=800" alt="Jaipur">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Heritage</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jaipur - Pink City</h3>
+                        <p>Palaces, forts, and the vibrant culture of Rajasthan</p>
+                        <div class="card-meta">
+                            <span>🕌 Best Season: Oct-Mar</span>
+                        </div>
+                        <a href="#jaipur-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <!-- Spiritual Sites -->
+                <div class="destination-card" data-category="spiritual" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800" alt="Varanasi">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Spiritual</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Varanasi</h3>
+                        <p>Ancient city on the Ganges, spiritual capital of India</p>
+                        <div class="card-meta">
+                            <span>🕉️ Best Season: Oct-Mar</span>
+                        </div>
+                        <a href="#varanasi-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="spiritual" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800" alt="Rishikesh">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Spiritual</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Rishikesh</h3>
+                        <p>Yoga capital of the world, Ganges, and adventure sports</p>
+                        <div class="card-meta">
+                            <span>🧘 Best Season: Feb-May, Sep-Nov</span>
+                        </div>
+                        <a href="#rishikesh-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="spiritual" data-aos="fade-up" data-aos-delay="1300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Amritsar">
+                        <div class="card-overlay"></div>
+                        <div class="card-category">Spiritual</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Amritsar - Golden Temple</h3>
+                        <p>Sikhism's holiest shrine, community kitchen, and history</p>
+                        <div class="card-meta">
+                            <span>🕌 Best Season: Oct-Mar</span>
+                        </div>
+                        <a href="#amritsar-detail" class="card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Incredible India</h3>
+                    <p>Discover the land of diversity, culture, and endless wonders.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="plan-trip.html">Plan Your Trip</a></li>
+                        <li><a href="about.html">About India</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Travel Info</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQs</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                        <li><a href="#">Visa Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Get travel inspiration delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Incredible India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <a href="plan-trip.html" class="floating-cta" aria-label="Plan your trip">
+        <span>Plan Your Journey</span>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/destinations.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip - Incredible India</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Incredible India</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                <li><a href="plan-trip.html" class="nav-link active">Plan Your Trip</a></li>
+                <li><a href="about.html" class="nav-link">About India</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="page-hero-content">
+            <h1 class="page-title">Plan Your Perfect Journey</h1>
+            <p class="page-subtitle">Create a customized itinerary tailored to your preferences</p>
+        </div>
+    </section>
+
+    <!-- Trip Planner Form -->
+    <section class="section planner-section">
+        <div class="container">
+            <div class="planner-container">
+                <div class="planner-form-wrapper" data-aos="fade-right">
+                    <h2 class="planner-title">Customize Your Trip</h2>
+                    <form class="trip-planner-form" id="tripPlannerForm">
+                        <div class="form-group">
+                            <label class="floating-label">Duration</label>
+                            <select name="duration" id="duration" class="form-input" required>
+                                <option value="">Select Duration</option>
+                                <option value="3-5">3-5 Days</option>
+                                <option value="6-8">6-8 Days</option>
+                                <option value="9-12">9-12 Days</option>
+                                <option value="13+">13+ Days</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="floating-label">Budget (per person)</label>
+                            <select name="budget" id="budget" class="form-input" required>
+                                <option value="">Select Budget</option>
+                                <option value="budget">₹20,000 - ₹50,000</option>
+                                <option value="mid">₹50,000 - ₹1,00,000</option>
+                                <option value="premium">₹1,00,000 - ₹2,00,000</option>
+                                <option value="luxury">₹2,00,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="floating-label">Travel Season</label>
+                            <select name="season" id="season" class="form-input" required>
+                                <option value="">Select Season</option>
+                                <option value="winter">Winter (Oct-Mar)</option>
+                                <option value="summer">Summer (Apr-Jun)</option>
+                                <option value="monsoon">Monsoon (Jul-Sep)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="floating-label">Region Preference</label>
+                            <select name="region" id="region" class="form-input" required>
+                                <option value="">Select Region</option>
+                                <option value="north">North India</option>
+                                <option value="south">South India</option>
+                                <option value="east">East India</option>
+                                <option value="west">West India</option>
+                                <option value="northeast">North East</option>
+                                <option value="central">Central India</option>
+                                <option value="any">Any Region</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="floating-label">Travel Style</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="style" value="culture">
+                                    <span>Culture & Heritage</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="style" value="adventure">
+                                    <span>Adventure</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="style" value="relaxation">
+                                    <span>Relaxation</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="style" value="spiritual">
+                                    <span>Spiritual</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="style" value="wildlife">
+                                    <span>Wildlife</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="style" value="food">
+                                    <span>Food & Cuisine</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large">Generate Itinerary</button>
+                    </form>
+                </div>
+
+                <div class="planner-results" id="plannerResults" data-aos="fade-left">
+                    <div class="results-placeholder">
+                        <div class="placeholder-icon">✈️</div>
+                        <h3>Your Itinerary Awaits</h3>
+                        <p>Fill out the form to generate your personalized travel plan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready-Made Itineraries -->
+    <section class="section itineraries-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready-Made Itineraries</h2>
+                <p class="section-subtitle">Handpicked journeys for popular destinations</p>
+            </div>
+            <div class="itineraries-grid">
+                <div class="itinerary-card" data-aos="fade-up">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Goa">
+                        <div class="itinerary-badge">Beach Paradise</div>
+                    </div>
+                    <div class="itinerary-content">
+                        <h3>Goa - 5 Days</h3>
+                        <p class="itinerary-duration">5 Days / 4 Nights</p>
+                        <ul class="itinerary-highlights">
+                            <li>Beach hopping</li>
+                            <li>Portuguese heritage</li>
+                            <li>Water sports</li>
+                            <li>Nightlife</li>
+                        </ul>
+                        <div class="itinerary-price">From ₹25,000</div>
+                        <a href="#goa-itinerary" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="itinerary-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800" alt="Kerala">
+                        <div class="itinerary-badge">Backwaters</div>
+                    </div>
+                    <div class="itinerary-content">
+                        <h3>Kerala - 6 Days</h3>
+                        <p class="itinerary-duration">6 Days / 5 Nights</p>
+                        <ul class="itinerary-highlights">
+                            <li>Houseboat stay</li>
+                            <li>Ayurvedic spa</li>
+                            <li>Tea plantations</li>
+                            <li>Beach relaxation</li>
+                        </ul>
+                        <div class="itinerary-price">From ₹35,000</div>
+                        <a href="#kerala-itinerary" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="itinerary-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a6e?w=800" alt="Rajasthan">
+                        <div class="itinerary-badge">Royal Heritage</div>
+                    </div>
+                    <div class="itinerary-content">
+                        <h3>Rajasthan - 7 Days</h3>
+                        <p class="itinerary-duration">7 Days / 6 Nights</p>
+                        <ul class="itinerary-highlights">
+                            <li>Jaipur - Udaipur - Jodhpur</li>
+                            <li>Palaces & forts</li>
+                            <li>Desert safari</li>
+                            <li>Cultural shows</li>
+                        </ul>
+                        <div class="itinerary-price">From ₹45,000</div>
+                        <a href="#rajasthan-itinerary" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="itinerary-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Ladakh">
+                        <div class="itinerary-badge">Adventure</div>
+                    </div>
+                    <div class="itinerary-content">
+                        <h3>Ladakh - 8 Days</h3>
+                        <p class="itinerary-duration">8 Days / 7 Nights</p>
+                        <ul class="itinerary-highlights">
+                            <li>Leh & Nubra Valley</li>
+                            <li>Pangong Lake</li>
+                            <li>Buddhist monasteries</li>
+                            <li>High-altitude adventure</li>
+                        </ul>
+                        <div class="itinerary-price">From ₹55,000</div>
+                        <a href="#ladakh-itinerary" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="itinerary-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800" alt="Golden Triangle">
+                        <div class="itinerary-badge">Heritage</div>
+                    </div>
+                    <div class="itinerary-content">
+                        <h3>Golden Triangle - 7 Days</h3>
+                        <p class="itinerary-duration">7 Days / 6 Nights</p>
+                        <ul class="itinerary-highlights">
+                            <li>Delhi - Agra - Jaipur</li>
+                            <li>Taj Mahal</li>
+                            <li>Historic monuments</li>
+                            <li>Cultural immersion</li>
+                        </ul>
+                        <div class="itinerary-price">From ₹45,000</div>
+                        <a href="#golden-triangle-itinerary" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="itinerary-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800" alt="North East">
+                        <div class="itinerary-badge">Nature</div>
+                    </div>
+                    <div class="itinerary-content">
+                        <h3>North East - 10 Days</h3>
+                        <p class="itinerary-duration">10 Days / 9 Nights</p>
+                        <ul class="itinerary-highlights">
+                            <li>Meghalaya & Assam</li>
+                            <li>Living root bridges</li>
+                            <li>Tea gardens</li>
+                            <li>Wildlife sanctuaries</li>
+                        </ul>
+                        <div class="itinerary-price">From ₹60,000</div>
+                        <a href="#northeast-itinerary" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Incredible India</h3>
+                    <p>Discover the land of diversity, culture, and endless wonders.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="plan-trip.html">Plan Your Trip</a></li>
+                        <li><a href="about.html">About India</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Travel Info</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQs</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                        <li><a href="#">Visa Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Get travel inspiration delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Incredible India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <a href="contact.html" class="floating-cta" aria-label="Contact us">
+        <span>Get Help</span>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/planner.js"></script>
+</body>
+</html>
+
+
